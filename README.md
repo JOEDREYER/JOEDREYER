@@ -1,10 +1,29 @@
-- 👋 Hi, I’m @JOEDREYER
-- 👀 I’m interested in Ruby on rails apps
-- 🌱 I’m currently learning the Le Wagon 
-- 💞️ I’m looking to collaborate on exciting new projects
-- 📫 How to reach me: jonathan.dreyer60@gmail.com
+class Joe < Human
+  def initialize
+   @name = 'Joe Dreyer'
+   @age = 32
+   @nationality = ['South African', 'Irish', 'Irish Passport']
+   @education = [ 'Stellenbosch University', 'Le Wagon', 'IH Sydney' ]
+   @hobbies = [ 'Surfing', 'Boardgames', 'Hiking' ]
+ end
 
-<!---
-JOEDREYER/JOEDREYER is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+  def current_location
+    'Cape Town, South Africa'
+  end
+  
+   def relocate!
+    'Anywhere in Europe'
+  end
+
+  def open_for_work?
+   true
+  end
+
+  def currently
+   {
+     coding: ['A boardgame meetup app: Game Plan'],
+     reading: [ 'The pragmatic programmer', 'The mastery of love'],
+     listening_to: ['Sam Fender']
+   }
+  end
+end
